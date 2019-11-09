@@ -1,10 +1,16 @@
 {
   "name": "media-wiki-search",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "davidkwan95 <davidkwan95@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "wikiSearch": "node build/wikiSearch"
+  },
   "devDependencies": {
+    "@types/node": "^12.12.7",
+    "prettier": "1.19.0",
     "typescript": "^3.7.2"
   }
 }
