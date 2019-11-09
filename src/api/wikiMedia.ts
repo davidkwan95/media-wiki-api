@@ -15,7 +15,7 @@ interface IWikiMediaAPISearchItem {
 }
 
 interface IWikiMediaAPISearchBodyResponse {
-  continue: {
+  continue?: {
     sroffset: number;
   };
   query: {
