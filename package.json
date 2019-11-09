@@ -10,13 +10,14 @@
   },
   "devDependencies": {
     "@types/node": "^12.12.7",
+    "@types/superagent": "^4.1.4",
     "prettier": "1.19.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "@types/superagent": "^4.1.4",
+    "csv-writer": "^1.5.0",
     "superagent": "^5.1.0"
   }
 }

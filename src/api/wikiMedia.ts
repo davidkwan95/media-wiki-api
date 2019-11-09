@@ -5,7 +5,7 @@
 
 import superagent from "superagent";
 
-interface IWikiMediaAPISearchItem {
+export interface IWikiMediaAPISearchItem {
   ns: number;
   title: string;
   pageid: number;
@@ -53,6 +53,7 @@ export default class WikiMediaAPI {
       list: "search",
       srsearch: searchPhrase,
       sroffset,
+      srlimit: 500,
       format: "json"
     });
 
