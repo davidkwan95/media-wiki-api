@@ -33,8 +33,8 @@ export default class WikiSearchCSVWriter implements IWikiSearchCSVWriter {
     this.fileStreamWriter.write(recordString);
   }
 
-  public end(): void {
-    this.fileStreamWriter.end();
+  public end(callback?: () => void): void {
+    this.fileStreamWriter.end(callback);
   }
 
   private stringifyRecords(records: IWikiMediaAPISearchItem[]) {

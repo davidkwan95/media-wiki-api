@@ -45,14 +45,14 @@ export default class WikiMediaAPI {
 
   public async search(
     searchPhrase: string,
-    sroffset: number = 0
+    offset: number = 0
   ): Promise<IWikiMediaAPISearchBodyResponse> {
     const endpoint = this.endpoint;
     const res = await superagent.get(endpoint).query({
       action: "query",
       list: "search",
       srsearch: searchPhrase,
-      sroffset,
+      sroffset: offset,
       srlimit: 500,
       format: "json"
     });
